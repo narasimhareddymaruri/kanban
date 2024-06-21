@@ -1,0 +1,193 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+html,body{
+  margin: 0;
+}
+
+
+.navbar{
+  background-color: lightgray;
+  height: 100%;
+  padding:10px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  
+}
+.red{
+  background-color: lightcoral;
+}
+.blue{
+  background-color: lightskyblue;
+}
+.green{
+  background-color: lightgreen;
+}
+.yellow{
+  background-color:lightseagreen;
+}
+.colors div{
+ width:60px;
+  height: 100%;
+}
+.colors{
+  display: flex;
+  width:35%;
+  justify-content: space-evenly;
+}
+.colors div:hover{
+  cursor: pointer;
+  filter: brightness(120%);
+ }
+.actions{
+  display: flex;
+  width:15%;
+  justify-content: space-evenly;
+}
+
+.actions div:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.board{
+  display:flex;
+  justify-content: space-evenly ;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.content{
+  width:15rem;
+  height:10rem;
+  border: 1px solid black;
+ 
+}
+.content_color{
+  height:2rem;
+}
+.content_id{
+  height:1rem;
+}
+.content_area{
+  height:5.5rem;
+  padding:1px;
+ 
+}
+.lock-unlock{
+  height:1.5rem;
+  float: inline-end;
+ 
+
+  
+}
+
+
+.modal{
+  position: fixed;
+  left: 25vw;
+  top: 25vh;
+  width:30rem;
+  height:20rem;
+  border: 2px solid gray;
+display: none;
+
+-webkit-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+
+
+}
+.modal_content_area{
+  width:20rem;
+  padding:1rem;
+  font-size: 30px;
+ 
+  
+ 
+}
+.modal_colors{
+  width:10rem;
+  background-color: black;
+  justify-content: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+
+} 
+
+.modal_red{
+  background-color: lightcoral;
+}
+.modal_blue{
+  background-color: lightskyblue;
+}
+.modal_green{
+  background-color: lightgreen;
+}
+.modal_yellow{
+  background-color:lightseagreen;
+}
+.modal_colors div{
+  width:3rem;
+  height:3rem;
+ }
+
+
+
+ /* css for modal */
+/* 
+.modal{ 
+  position: fixed;
+  height: 50vh;
+  width: 50vw;
+  left: 25vw;
+  top: 25vh;
+
+  display: flex;
+
+  border: 2px solid grey;
+
+  -webkit-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -4px rgba(0, 0, 0, 0.75);
+}
+
+.modal_content_area {
+  height: 100%;
+  width: 75%;
+  font-size: 2rem;
+  padding: 2rem;
+  border: none;
+  outline: none;
+
+  resize: none;
+}
+.modal_colors {
+  background-color: black;
+  height: 100%;
+  width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-left: 2px solid grey;
+}
+
+.priority-color {
+  height: 3rem;
+  width: 5rem;
+}
+
+.active {
+  border: 5px solid white;
+} */
